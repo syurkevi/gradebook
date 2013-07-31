@@ -1,0 +1,14 @@
+Starting audit...
+/home/drkshdw/coding/cs2340/gradebook/src/main/java/gradebook/model/AbstractDataStore.java:3: Missing a Javadoc comment.
+/home/drkshdw/coding/cs2340/gradebook/src/main/java/gradebook/model/AbstractStoringFactory.java:3: Missing a Javadoc comment.
+/home/drkshdw/coding/cs2340/gradebook/src/main/java/gradebook/model/ArrayDataStore.java:4: Missing a Javadoc comment.
+/home/drkshdw/coding/cs2340/gradebook/src/main/java/gradebook/model/ArrayStoringFactory.java:3: Missing a Javadoc comment.
+/home/drkshdw/coding/cs2340/gradebook/src/main/java/gradebook/model/Class.java:5: Missing a Javadoc comment.
+/home/drkshdw/coding/cs2340/gradebook/src/main/java/gradebook/model/Course.java:4: Missing a Javadoc comment.
+/home/drkshdw/coding/cs2340/gradebook/src/main/java/gradebook/model/GradebookCategory.java:3: Missing a Javadoc comment.
+/home/drkshdw/coding/cs2340/gradebook/src/main/java/gradebook/model/GradebookItem.java:3: Missing a Javadoc comment.
+/home/drkshdw/coding/cs2340/gradebook/src/main/java/gradebook/model/GradingScheme.java:4: Missing a Javadoc comment.
+/home/drkshdw/coding/cs2340/gradebook/src/main/java/gradebook/model/LazyGrader.java:4: Missing a Javadoc comment.
+/home/drkshdw/coding/cs2340/gradebook/src/main/java/gradebook/model/Section.java:4: Missing a Javadoc comment.
+/home/drkshdw/coding/cs2340/gradebook/src/main/java/gradebook/model/Student.java:3: Missing a Javadoc comment.
+Audit done.
