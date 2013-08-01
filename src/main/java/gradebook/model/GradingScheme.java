@@ -1,7 +1,10 @@
 package gradebook.model;
 import java.util.List;
 
-public interface GradingScheme<T>  {
-    T grade(List<GradebookItem<T>> grades);
-    char letterGrade(List<GradebookItem<T>> grades);
+/*
+ * Defines an abstract grading strategy
+ */
+public abstract class GradingScheme<T>  {
+    abstract T grade(List<GradebookItem<T>> grades);
+    abstract char letterGrade(List<GradebookItem<T>> grades);
 }

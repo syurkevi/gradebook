@@ -1,5 +1,9 @@
 package gradebook.model;
 
+/*
+ * Class that defines a gradebook category
+ * Can be used in different grading schemes
+ */
 public class GradebookCategory {
     private String name;
     private int weight;

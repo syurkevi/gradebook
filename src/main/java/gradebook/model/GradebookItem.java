@@ -1,5 +1,8 @@
 package gradebook.model;
 
+/*
+ * Class that defines an actual gradebook item that students will hold
+ */
 public class GradebookItem<T> {
     private String name;
     private T grade;

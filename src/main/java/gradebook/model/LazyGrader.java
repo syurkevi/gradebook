@@ -1,7 +1,10 @@
 package gradebook.model;
 import java.util.List;
 
-public class LazyGrader implements GradingScheme<Double> {
+/*
+ * implements a concrete grading strategy
+ */
+public class LazyGrader extends GradingScheme<Double> {
     private String gradingCategory;
     private final int threshold = 80;
 
