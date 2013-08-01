@@ -1,0 +1,4 @@
+Testsuite: ArrStoreFactoryTest
+Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0.013 sec
+
+Testcase: testFactory took 0.001 sec

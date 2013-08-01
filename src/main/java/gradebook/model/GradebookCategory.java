@@ -8,6 +8,11 @@ public class GradebookCategory {
     private String name;
     private int weight;
 
+    public GradebookCategory(int newWeight, String newName) {
+        weight = newWeight;
+        name = newName;
+    }
+
     public void setWeight(int w) {
         weight = w;
     }

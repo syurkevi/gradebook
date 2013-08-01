@@ -5,6 +5,6 @@ package gradebook.model;
  *@param <T> type of obect to generate store for
  */
 public abstract class AbstractStoringFactory<T> {
-    abstract AbstractDataStore<T> getObjectStore();
-    abstract AbstractDataStore<T> getObjectStore(String type);
+    public abstract AbstractDataStore<T> getObjectStore();
+    public abstract AbstractDataStore<T> getObjectStore(String type);
 }

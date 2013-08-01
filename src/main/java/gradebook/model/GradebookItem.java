@@ -9,6 +9,15 @@ public class GradebookItem<T> {
     private T grade;
     private GradebookCategory category;
 
+    public GradebookItem(T newGrade) {
+        grade = newGrade;
+    }
+
+    public GradebookItem(T newGrade, GradebookCategory newCategory) {
+        grade = newGrade;
+        category = newCategory;
+    }
+
     public void setGrade(T newGrade) {
         grade = newGrade;
     }

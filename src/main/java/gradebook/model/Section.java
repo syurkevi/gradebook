@@ -8,10 +8,10 @@ import java.util.List;
  *@param <T> unit of grading
  */
 public class Section<T> implements Grading<T> {
-    private List<Student> enrolled;
+    private List<Student<T>> enrolled = new LinkedList<Student<T>>();
     private GradingScheme sectionScheme = new LazyGrader("Category 1");
 
-    public List<Student> getStudents() {
+    public List<Student<T>> getStudents() {
         return enrolled;
     }
 

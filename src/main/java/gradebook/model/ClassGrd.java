@@ -7,11 +7,11 @@ import java.util.LinkedList;
  *it also is an implementation of the "grading" composite object
  *@param <T> unit of grading
  */
-public class Class<T> implements Grading<T> { //composite
+public class ClassGrd<T> implements Grading<T> { //composite
     private Course course;
     private List<Student> enrolled = new LinkedList<Student>();
     private List<Section> sections = new LinkedList<Section>();
-    private GradingScheme classScheme = new LazyGrader("Category 1");
+    private GradingScheme classScheme = new LazyGrader("Category Test");
 
     public Course getCourse() {
         return course;
@@ -35,14 +35,6 @@ public class Class<T> implements Grading<T> { //composite
 
     public void addSection(Section s) {
         sections.add(s);
-    }
-
-    public int average() {
-       return 0;
-    }
-
-    public char letterGrade() {
-       return 0;
     }
 
     public GradingScheme<T> getCurrentGradingScheme() {

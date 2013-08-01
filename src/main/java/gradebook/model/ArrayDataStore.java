@@ -1,29 +1,31 @@
 package gradebook.model;
-import java.util.ArrayList;
 
 /**
  * A specific implementation of a data store
- * using an arraylist as the backing data structure,
+ * using an array as the backing data structure,
  * mainly for testing
  * @param <T> type of object being stored
  */
 public class ArrayDataStore<T> implements AbstractDataStore<T> {
     private int arraySize;
-    private ArrayList<T> store;
+    private T[] store;
 
     public ArrayDataStore(int defaultArraySize) {
         arraySize = defaultArraySize;
-        store = new ArrayList<T>(arraySize);
+        store = (T[]) new Object[arraySize];
     }
     public T read(int id) {
-        if (id > 0 && id < store.size()) {
-            return store.get(id);
+        if (id > 0 && id < arraySize) {
+            return store[id];
         }
         return null;
     }
     public void write(int id, T stored) {
-        if (id > 0 && id < store.size()) {
-            store.add(id, stored);
+        if (id > 0 && id < arraySize) {
+            store[id] = stored;
         }
+    }
+    public int backingArraySize() {
+        return arraySize;
     }
 }

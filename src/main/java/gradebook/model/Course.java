@@ -1,5 +1,6 @@
 package gradebook.model;
 import java.util.List;
+import java.util.LinkedList;
 
 /**
  * Class holding basic information for a course
@@ -8,7 +9,7 @@ public class Course {
     private int courseNum;
     private String subject;
     private String courseName;
-    private List<Course> preReqs;
+    private List<Course> preReqs = new LinkedList<Course>();
 
     public void setCourseNumber(int num) {
         courseNum = num;

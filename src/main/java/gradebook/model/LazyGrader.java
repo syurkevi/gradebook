@@ -4,7 +4,7 @@ import java.util.List;
 /**
  * implements a concrete grading strategy
  */
-public class LazyGrader extends GradingScheme<Double> {
+public class LazyGrader extends GradingScheme<Integer> {
     private String gradingCategory;
     private final int threshold = 80;
 
@@ -12,20 +12,22 @@ public class LazyGrader extends GradingScheme<Double> {
         gradingCategory = category;
     }
 
-    public Double grade(List<GradebookItem<Double>> grades) {
+    public Integer grade(List<GradebookItem<Integer>> grades) {
         if (grades.size() < 1) {
-            return -1.0;
+            return -1;
         }
-        double sum = 0;
-        for (GradebookItem<Double> g : grades) {
-            if (g.getCategory().getName().equals(gradingCategory)) {
+        Integer sum = 0;
+        for (GradebookItem<Integer> g : grades) {
+            if (g.getCategory() == null
+                    || g.getCategory().getName().equals(gradingCategory)) {
                 sum += g.getGrade();
             }
         }
         return sum / grades.size();
     }
-    public char letterGrade(List<GradebookItem<Double>> grades) {
+    public char letterGrade(List<GradebookItem<Integer>> grades) {
         char lGrade;
+        System.out.println(grade(grades));
         if (grade(grades) > threshold) {
             lGrade = 'a';
         } else {
