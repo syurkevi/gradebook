@@ -2,6 +2,11 @@ package gradebook.model;
 import java.util.LinkedList;
 import java.util.List;
 
+/**
+ *Implements a section of students
+ *is also an instance of the "grading" composite object
+ *@param <T> unit of grading
+ */
 public class Section<T> implements Grading<T> {
     private List<Student> enrolled;
     private GradingScheme sectionScheme = new LazyGrader("Category 1");

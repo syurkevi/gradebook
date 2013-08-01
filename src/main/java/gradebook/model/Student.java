@@ -2,6 +2,10 @@ package gradebook.model;
 import java.util.List;
 import java.util.LinkedList;
 
+/**
+ * A class inplementing a student
+ * @param <T> type of grades the student receives
+ */
 public class Student<T> implements Grading<T> { //leaf in grading
     private String name;
     private GradingScheme<T> currentScheme =

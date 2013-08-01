@@ -1,7 +1,7 @@
 package gradebook.model;
 import java.util.List;
 
-/*
+/**
  * implements a concrete grading strategy
  */
 public class LazyGrader extends GradingScheme<Double> {

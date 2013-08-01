@@ -1,5 +1,8 @@
 package gradebook.model;
-
+/**
+ *A factory that creates different array-backed stores
+ *@param <T> type of object being stored
+ */
 public class ArrayStoringFactory<T> extends AbstractStoringFactory<T> {
     private final int defaultArrayStoreSize = 10;
     private final int defaultSmallSize = 2;

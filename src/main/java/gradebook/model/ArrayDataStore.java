@@ -1,6 +1,12 @@
 package gradebook.model;
 import java.util.ArrayList;
 
+/**
+ * A specific implementation of a data store
+ * using an arraylist as the backing data structure,
+ * mainly for testing
+ * @param <T> type of object being stored
+ */
 public class ArrayDataStore<T> implements AbstractDataStore<T> {
     private int arraySize;
     private ArrayList<T> store;

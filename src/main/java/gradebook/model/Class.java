@@ -2,9 +2,10 @@ package gradebook.model;
 import java.util.List;
 import java.util.LinkedList;
 
-/*
+/**
  *A class object implements an instance of a course
  *it also is an implementation of the "grading" composite object
+ *@param <T> unit of grading
  */
 public class Class<T> implements Grading<T> { //composite
     private Course course;

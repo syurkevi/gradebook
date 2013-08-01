@@ -1,7 +1,7 @@
 package gradebook.model;
 import java.util.List;
 
-/*
+/**
  * Class holding basic information for a course
  */
 public class Course {

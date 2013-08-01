@@ -1,6 +1,6 @@
 package gradebook.model;
 
-/*
+/**
  * Class that defines a gradebook category
  * Can be used in different grading schemes
  */
